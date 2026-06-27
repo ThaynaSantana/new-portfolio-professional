@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thayna Santana — TI Estratégica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-dot"></div>
+    Thayna Santana
+  </div>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#pilares">Pilares</a></li>
+    <li><a href="#cyber">Cibersegurança</a></li>
+    <li><a href="#trabalhos">Projetos</a></li>
+    <li><a href="#contato" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-scanlines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-status">DISPONÍVEL PARA NOVOS PROJETOS</div>
+      <h1 class="hero-title">
+        <span class="line1">Thayna Santana 👋</span>
+        <span class="line2">visão estratégica.</span>
+      </h1>
+      <p class="hero-sub">
+        Profissional de TI que entende de código e de negócio. Gestão de projetos, qualidade, segurança e melhoria de processos e fluxos.
+      </p>
+      <div class="hero-pills">
+        <span class="pill">Gestão de Projetos TI</span>
+        <span class="pill cyan">Cibersegurança</span>
+        <span class="pill green">Governança & Qualidade</span>
+        <span class="pill amber">Projetos Regulatórios</span>
+        <span class="pill">Otimização de Processos</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#trabalhos" class="btn-primary" onclick="openTab('projetos-tab')">Ver Projetos</a>
+        <a href="#contato" class="btn-outline">Entre em Contato</a>
+      </div>
+    </div>
+
+    <!-- Terminal Widget -->
+    <div class="hero-terminal-widget">
+      <div class="term-bar">
+        <div class="term-dot r"></div>
+        <div class="term-dot y"></div>
+        <div class="term-dot g"></div>
+        <span class="term-title">project_flow.sh — execução</span>
+      </div>
+      <div class="term-body" id="terminal-body">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="section-header reveal">
+    <div class="section-label">Sobre mim</div>
+    <h2 class="section-title">Um perfil que une mundos</h2>
+    <p class="section-desc">Conhecimento técnico como alavanca para gestão, processos e entregas que importam de verdade.</p>
+  </div>
+  <div class="sobre-grid">
+    <div class="sobre-text reveal">
+      <p>Minha trajetória em TI sempre foi guiada por uma pergunta: <strong>como podemos fazer esse processo funcionar melhor?</strong> Comecei pelo desenvolvimento com Python, Java, arquitetura de software, e esse background técnico ainda é parte do que me diferencia. Consigo conversar de igual para igual com times de engenharia e fornecedores, entender o que é viável e traduzir isso para o usuário.</p>
+      <p>Hoje atuo mais na <em>gestão do que na execução técnica</em>: cuido de cronogramas, homologações, gestão de testes e fluxos de entrega. Uso Power BI, Power Apps e Power Automate não só para gerar relatórios, mas para <strong>criar soluções que facilitam o dia a dia de quem trabalha comigo</strong>.</p>
+      <p>Gosto de projetos com estrutura clara, onde dá pra acompanhar o progresso, do planejamento da primeira sprint até a validação com o cliente. <strong>Qualidade, visibilidade e tecnologia bem aplicada</strong> são o que busco em cada entrega.</p>
+      <div class="soft-skills">
+        <div class="soft-skills-title">Soft skills</div>
+        <div class="soft-tags">
+          <span class="soft-tag">Comunicação executiva</span>
+          <span class="soft-tag">Negociação</span>
+          <span class="soft-tag">Liderança de equipes</span>
+          <span class="soft-tag">Gestão de stakeholders</span>
+          <span class="soft-tag">Visão sistêmica</span>
+          <span class="soft-tag">Resolução de conflitos</span>
+          <span class="soft-tag">Pensamento analítico</span>
+          <span class="soft-tag">Adaptabilidade</span>
+          <span class="soft-tag">Documentação</span>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-sidebar">
+      <!-- FOTO -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:.7rem;" class="reveal">
+        <div class="photo-wrap">
+          <div class="photo-ring" id="photo-ring-sobre">
+            <img src="foto.png" alt="Thayna Santana" onerror="this.style.display='none';document.getElementById('ph-sobre').style.display='flex'"/>
+            <div class="photo-placeholder" id="ph-sobre" style="display:none">
+              <span>🪪</span>
+              <span>foto.png<br>não encontrada</span>
+            </div>
+          </div>
+          <div class="photo-online-dot"></div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-weight:700;font-size:1rem;">Thayna Santana</div>
+          <div style="color:var(--cyan);font-size:.78rem;font-family:var(--mono);margin-top:.2rem;">Gestão de Projetos & TI</div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-title">Perfil</div>
+        <div class="info-row"><span class="info-key">Localização</span><span class="info-val">Salvador/ Bahia / Brasil 🇧🇷</span></div>
+        <div class="info-row"><span class="info-key">Disponibilidade</span><span class="status-badge">Restrita - Propostas sob análise</span></div>
+        <div class="info-row"><span class="info-key">Inglês</span><span class="info-val">Profissional</span></div>
+        <div class="info-row"><span class="info-key">Experiência</span><span class="info-val">5+ anos</span></div>
+        <div class="info-row"><span class="info-key">Modalidade</span><span class="info-val">Híbrido / Remote / Presencial</span></div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-title">Atuação</div>
+        <div class="info-row"><span class="info-key">Gestão de Projetos</span><span class="info-val">✔</span></div>
+        <div class="info-row"><span class="info-key">Governança TI</span><span class="info-val">✔</span></div>
+        <div class="info-row"><span class="info-key">Cibersegurança</span><span class="info-val">✔</span></div>
+        <div class="info-row"><span class="info-key">Processos / BPM</span><span class="info-val">✔</span></div>
+        <div class="info-row"><span class="info-key">Regulatório / LGPD</span><span class="info-val">✔</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FLUXO DE ENTREGA -->
+<section id="pilares">
+  <div class="section-header reveal">
+    <div class="section-label">Como entrego</div>
+    <h2 class="section-title">Do início ao cliente satisfeito</h2>
+    <p class="section-desc">Cada projeto tem um fluxo. Clique em cada fase para ver o que acontece por dentro.</p>
+  </div>
+
+  <!-- FLOW STEPS -->
+  <div class="flow-wrapper reveal">
+
+    <!-- linha conectora -->
+    <div class="flow-track"></div>
+
+    <div class="flow-steps" id="flow-steps">
+
+      <!-- 1 -->
+      <div class="flow-step active" data-step="0">
+        <div class="flow-dot"><span>1</span></div>
+        <div class="flow-label">Escuta & Escopo</div>
+      </div>
+      <!-- 2 -->
+      <div class="flow-step" data-step="1">
+        <div class="flow-dot"><span>2</span></div>
+        <div class="flow-label">Contratos</div>
+      </div>
+      <!-- 3 -->
+      <div class="flow-step" data-step="2">
+        <div class="flow-dot"><span>3</span></div>
+        <div class="flow-label">Cronograma</div>
+      </div>
+      <!-- 4 -->
+      <div class="flow-step" data-step="3">
+        <div class="flow-dot"><span>4</span></div>
+        <div class="flow-label">Financeiro</div>
+      </div>
+      <!-- 5 -->
+      <div class="flow-step" data-step="4">
+        <div class="flow-dot"><span>5</span></div>
+        <div class="flow-label">Testes & QA</div>
+      </div>
+      <!-- 6 -->
+      <div class="flow-step" data-step="5">
+        <div class="flow-dot"><span>6</span></div>
+        <div class="flow-label">Segurança & LGPD</div>
+      </div>
+      <!-- 7 -->
+      <div class="flow-step" data-step="6">
+        <div class="flow-dot"><span>7</span></div>
+        <div class="flow-label">Implantação</div>
+      </div>
+      <!-- 8 -->
+      <div class="flow-step" data-step="7">
+        <div class="flow-dot star"><span>★</span></div>
+        <div class="flow-label">Cliente Feliz</div>
+      </div>
+
+    </div>
+
+    <!-- DETAIL PANEL -->
+    <div class="flow-panel-wrap">
+
+      <!-- Painel 0: Escuta & Escopo -->
+      <div class="flow-panel active" id="fp-0">
+        <div class="fp-icon">👂</div>
+        <div class="fp-content">
+          <div class="fp-title">Escuta ativa & definição de escopo</div>
+          <div class="fp-desc">Antes de qualquer linha do cronograma, o projeto começa com escuta. Entender o que o cliente realmente precisa não só o que está no briefing define se a entrega vai fazer sentido lá na frente. Levanto requisitos, valido expectativas e defino escopo com clareza para que não haja surpresa no meio do caminho.</div>
+          <div class="fp-tags"><span class="fptag blue">Requisitos</span><span class="fptag blue">Stakeholders</span><span class="fptag blue">Escopo</span><span class="fptag blue">Alinhamento</span></div>
+        </div>
+      </div>
+
+      <!-- Painel 1: Contratos -->
+      <div class="flow-panel" id="fp-1">
+        <div class="fp-icon">📄</div>
+        <div class="fp-content">
+          <div class="fp-title">Gestão de contratos & fornecedores</div>
+          <div class="fp-desc">Cuido do ciclo completo de contratos: negociação com fornecedores, SLAs, prazos e obrigações. Garanto que o que foi acordado está documentado e acompanho de perto se está sendo cumprido. Quando algo muda (e muda sempre), processo o aditivo sem perder o controle do projeto.</div>
+          <div class="fp-tags"><span class="fptag amber">SLA</span><span class="fptag amber">Fornecedores</span><span class="fptag amber">Negociação</span><span class="fptag amber">Aditivos</span></div>
+        </div>
+      </div>
+
+      <!-- Painel 2: Cronograma INTERATIVO -->
+      <div class="flow-panel" id="fp-2">
+        <div class="fp-icon">📅</div>
+        <div class="fp-content">
+          <div class="fp-title">Gestão de cronograma</div>
+          <div class="fp-desc">Cronograma não é só uma tabela bonita é o mapa do projeto. Acompanho desvios, antecipo gargalos e ajusto sem perder o prazo final de vista. Abaixo um cronograma simulado: <strong>arraste as datas</strong> e veja o impacto.</div>
+          <div class="gantt-widget">
+            <div class="gantt-header">
+              <span class="gantt-h-label">Fase</span>
+              <div class="gantt-h-weeks" id="gantt-weeks"></div>
+            </div>
+            <div class="gantt-rows" id="gantt-rows"></div>
+            <div class="gantt-hint">💡 Passe o mouse sobre as barras ou arraste para simular mudanças</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel 3: Financeiro -->
+      <div class="flow-panel" id="fp-3">
+        <div class="fp-icon">💰</div>
+        <div class="fp-content">
+          <div class="fp-title">Gestão financeira do projeto</div>
+          <div class="fp-desc">Orçamento aprovado não é garantia de orçamento cumprido. Faço o acompanhamento de custos por fase, controlo o consumo de horas e recursos, e gero visibilidade para a gestão tomar decisões com dados. Quando o projeto está no vermelho, prefiro falar antes que o problema apareça na fatura.</div>
+          <div class="fp-tags"><span class="fptag green">Budget</span><span class="fptag green">Custos</span><span class="fptag green">Relatórios</span><span class="fptag green">Previsão</span></div>
+          <div class="budget-bars">
+            <div class="bbar-row"><span class="bbar-label">Infraestrutura</span><div class="bbar-track"><div class="bbar-fill" style="width:72%;background:var(--green)"></div></div><span class="bbar-pct">72%</span></div>
+            <div class="bbar-row"><span class="bbar-label">Licenças</span><div class="bbar-track"><div class="bbar-fill" style="width:58%;background:var(--blue)"></div></div><span class="bbar-pct">58%</span></div>
+            <div class="bbar-row"><span class="bbar-label">Equipe</span><div class="bbar-track"><div class="bbar-fill" style="width:88%;background:var(--amber)"></div></div><span class="bbar-pct">88%</span></div>
+            <div class="bbar-row"><span class="bbar-label">Contingência</span><div class="bbar-track"><div class="bbar-fill" style="width:30%;background:var(--cyan)"></div></div><span class="bbar-pct">30%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel 4: Testes -->
+      <div class="flow-panel" id="fp-4">
+        <div class="fp-icon">🧪</div>
+        <div class="fp-content">
+          <div class="fp-title">Gestão de testes & qualidade</div>
+          <div class="fp-desc">Homologação não é a última etapa é o momento de provar que o que foi desenvolvido funciona de verdade. Estruturo planos de teste, acompanho a execução, registro evidências e valido junto ao cliente antes de qualquer go-live. Qualidade não é auditada no final; é construída durante todo o projeto.</div>
+          <div class="fp-tags"><span class="fptag cyan">Plano de Testes</span><span class="fptag cyan">Homologação</span><span class="fptag cyan">Evidências</span><span class="fptag cyan">UAT</span></div>
+          <div class="test-checklist">
+            <div class="tcheck done">✓ Casos de teste definidos</div>
+            <div class="tcheck done">✓ Ambiente de homologação configurado</div>
+            <div class="tcheck done">✓ Testes executados e evidenciados</div>
+            <div class="tcheck done">✓ Aprovação formal do cliente</div>
+            <div class="tcheck pending">◷ Regressão pós-implantação</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel 5: Segurança & LGPD -->
+      <div class="flow-panel" id="fp-5">
+        <div class="fp-icon">🔐</div>
+        <div class="fp-content">
+          <div class="fp-title">Segurança, LGPD & Compliance</div>
+          <div class="fp-desc">Conformidade não é burocracia é proteção para o projeto e para o cliente. Garanto que as entregas passam pelos critérios de segurança da informação, privacidade de dados (LGPD) e conformidade regulatória exigidos. Isso entra no projeto desde o planejamento, não só na auditoria final.</div>
+          <div class="fp-tags"><span class="fptag red">LGPD</span><span class="fptag red">ISO 27001</span><span class="fptag red">Compliance</span><span class="fptag red">Risco</span></div>
+          <div class="compliance-checks">
+            <div class="comp-item"><span class="comp-ico ok">✓</span><span>Mapeamento de dados pessoais</span></div>
+            <div class="comp-item"><span class="comp-ico ok">✓</span><span>Análise de risco de segurança</span></div>
+            <div class="comp-item"><span class="comp-ico ok">✓</span><span>Políticas de acesso e controle</span></div>
+            <div class="comp-item"><span class="comp-ico ok">✓</span><span>Conformidade regulatória validada</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel 6: Implantação -->
+      <div class="flow-panel" id="fp-6">
+        <div class="fp-icon">🚀</div>
+        <div class="fp-content">
+          <div class="fp-title">Gestão de implantação & cutover</div>
+          <div class="fp-desc">O go-live é o momento mais crítico. Planejo o cutover com antecedência: janela de implantação, plano de rollback, comunicação com todas as partes e acompanhamento em tempo real. O objetivo é sempre implantar sem impacto para o usuário final e com evidência de que tudo funcionou.</div>
+          <div class="fp-tags"><span class="fptag amber">Cutover</span><span class="fptag amber">Rollback</span><span class="fptag amber">Go-Live</span><span class="fptag amber">Monitoramento</span></div>
+          <div class="deploy-steps">
+            <div class="ds-step done"><span class="ds-n">01</span><span>Plano de cutover aprovado</span></div>
+            <div class="ds-step done"><span class="ds-n">02</span><span>Comunicação enviada aos times</span></div>
+            <div class="ds-step done"><span class="ds-n">03</span><span>Janela de implantação executada</span></div>
+            <div class="ds-step done"><span class="ds-n">04</span><span>Validação pós-implantação</span></div>
+            <div class="ds-step done"><span class="ds-n">05</span><span>Projeto entregue com qualidade ✓</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel 7: Cliente Feliz -->
+      <div class="flow-panel" id="fp-7">
+        <div class="fp-icon">⭐</div>
+        <div class="fp-content">
+          <div class="fp-title">Satisfação & experiência do cliente</div>
+          <div class="fp-desc">O projeto não termina na implantação termina quando o cliente confirma que o que foi entregue resolve o problema que ele tinha lá no começo. Por isso a escuta ativa nunca para: começa no levantamento de requisitos e segue até o encerramento formal. Um cliente satisfeito é a melhor métrica de sucesso.</div>
+          <div class="fp-tags"><span class="fptag green">NPS</span><span class="fptag green">Experiência</span><span class="fptag green">Escuta Ativa</span><span class="fptag green">Encerramento</span></div>
+          <div class="stars-row">
+            <span class="big-star">⭐</span><span class="big-star">⭐</span><span class="big-star">⭐</span><span class="big-star">⭐</span><span class="big-star">⭐</span>
+            <span class="star-label">Cliente satisfeito. Projeto encerrado.</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end flow-panel-wrap -->
+  </div><!-- end flow-wrapper -->
+</section>
+
+<div class="divider"></div>
+
+<!-- CIBERSEGURANÇA + HACKER GADGETS -->
+<section id="cyber">
+  <div class="section-header reveal">
+    <div class="section-label">Cibersegurança</div>
+    <h2 class="section-title">Penso como atacante, ajo como defensor</h2>
+    <p class="section-desc">Entender como sistemas são comprometidos é o primeiro passo para protegê-los de verdade.</p>
+  </div>
+  <div class="cyber-layout">
+    <div class="cyber-text reveal">
+      <p>Minha abordagem de segurança é prática: entender como ataques acontecem ajuda a <strong>montar defesas que realmente funcionam</strong> e não só checklist de compliance.</p>
+      <p>Trabalho com avaliação de riscos, revisão de políticas de acesso, adequação à LGPD e resposta a incidentes. Mas também com <em>treinamentos e simulações de phishing</em> porque o maior risco em qualquer empresa costuma estar nas pessoas, não nos sistemas.</p>
+      <p>Segurança da informação não precisa ser assunto só de TI. <strong>Quando todo mundo entende o básico</strong>, os incidentes diminuem de verdade.</p>
+      <div class="cyber-domains">
+        <div class="cyber-domain">
+          <div class="cyber-domain-icon">🛡️</div>
+          <div><div class="cyber-domain-name">Análise de Riscos</div><div class="cyber-domain-sub">Avaliação, priorização e mitigação de ameaças</div></div>
+        </div>
+        <div class="cyber-domain">
+          <div class="cyber-domain-icon">🔍</div>
+          <div><div class="cyber-domain-name">Auditoria & Pentest Básico</div><div class="cyber-domain-sub">Revisão de controles e testes de superfície de ataque</div></div>
+        </div>
+        <div class="cyber-domain">
+          <div class="cyber-domain-icon">📜</div>
+          <div><div class="cyber-domain-name">LGPD & Compliance</div><div class="cyber-domain-sub">Compliance, políticas e conformidade regulatória</div></div>
+        </div>
+        <div class="cyber-domain">
+          <div class="cyber-domain-icon">🎭</div>
+          <div><div class="cyber-domain-name">Engenharia Social</div><div class="cyber-domain-sub">Conscientização e simulações de phishing</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GADGETS COLUNA -->
+    <div class="gadgets-col reveal">
+
+      <!-- Gadget 1: Threat Level -->
+      <div class="gadget">
+        <div class="gadget-header">
+          <div class="dot"></div>
+          threat_monitor.sh — live feed
+        </div>
+        <div class="gadget-body">
+          <div class="threat-bars" id="threat-bars">
+            <div class="threat-row">
+              <div class="threat-label"><span>SQL Injection</span><span style="color:var(--red)">HIGH</span></div>
+              <div class="threat-track"><div class="threat-fill" style="width:0%;background:var(--red)" data-w="82%"></div></div>
+            </div>
+            <div class="threat-row">
+              <div class="threat-label"><span>Phishing</span><span style="color:var(--amber)">MED</span></div>
+              <div class="threat-track"><div class="threat-fill" style="width:0%;background:var(--amber)" data-w="65%"></div></div>
+            </div>
+            <div class="threat-row">
+              <div class="threat-label"><span>Brute Force</span><span style="color:var(--amber)">MED</span></div>
+              <div class="threat-track"><div class="threat-fill" style="width:0%;background:var(--amber)" data-w="48%"></div></div>
+            </div>
+            <div class="threat-row">
+              <div class="threat-label"><span>XSS</span><span style="color:var(--green)">LOW</span></div>
+              <div class="threat-track"><div class="threat-fill" style="width:0%;background:var(--green)" data-w="22%"></div></div>
+            </div>
+            <div class="threat-row">
+              <div class="threat-label"><span>MITM</span><span style="color:var(--green)">LOW</span></div>
+              <div class="threat-track"><div class="threat-fill" style="width:0%;background:var(--green)" data-w="15%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gadget 2: Password Strength -->
+      <div class="gadget">
+        <div class="gadget-header">
+          <div class="dot"></div>
+          password_strength_checker.py
+        </div>
+        <div class="gadget-body">
+          <div class="pw-checker">
+            <input class="pw-field" type="text" id="pw-input" placeholder="Digite uma senha para testar..." oninput="checkPw(this.value)" autocomplete="off" spellcheck="false"/>
+            <div class="pw-bars">
+              <div class="pw-bar" id="pw-b1"></div>
+              <div class="pw-bar" id="pw-b2"></div>
+              <div class="pw-bar" id="pw-b3"></div>
+              <div class="pw-bar" id="pw-b4"></div>
+            </div>
+            <div class="pw-label" id="pw-label">// aguardando input...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gadget 3: Ping Scanner com dados reais do visitante -->
+      <div class="gadget">
+        <div class="gadget-header">
+          <div class="dot"></div>
+          visitor_recon.sh — <span style="color:var(--red)">⚠ dados reais</span>
+        </div>
+        <div class="gadget-body">
+          <div class="ping-list" id="ping-list">
+            <div class="ping-row"><span class="ping-host">Carregando...</span><span class="ping-status warn">...</span><span class="ping-ms">—</span></div>
+          </div>
+          <button class="ping-btn" onclick="rescan()">↺ re-scan visitante</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJETOS + CERTS -->
+<section id="trabalhos">
+  <div class="section-header reveal">
+    <div class="section-label">Trabalhos</div>
+    <h2 class="section-title">Projetos & Certificações</h2>
+    <p class="section-desc">Entregas reais e credenciais que sustentam a trajetória.</p>
+  </div>
+  <div class="tabs-nav reveal">
+    <button class="tab-btn active" id="projetos-tab" onclick="openTab('projetos-tab')">📁 Projetos <span class="tab-count">4</span></button>
+    <button class="tab-btn" id="certs-tab" onclick="openTab('certs-tab')">🏅 Certificações <span class="tab-count">5</span></button>
+  </div>
+
+  <!-- PROJETOS -->
+  <div class="tab-panel active" id="panel-projetos-tab">
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb">📜<div class="project-type"><span class="type-badge reg">Regulatório</span></div></div>
+        <div class="project-body">
+          <div class="project-title">Adequação LGPD — Setor Financeiro</div>
+          <div class="project-desc">Gestão do projeto de adequação à LGPD em instituição financeira: mapeamento de dados, políticas de privacidade, treinamentos e entrega dos artefatos ao encarregado (DPO).</div>
+          <div class="project-stack"><span class="tag">LGPD</span><span class="tag">DPO</span><span class="tag">Risco</span><span class="tag">Documentação</span></div>
+          <a href="#" class="project-link">Ver detalhes →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">🏗️<div class="project-type"><span class="type-badge infra">Infraestrutura</span></div></div>
+        <div class="project-body">
+          <div class="project-title">Migração de Datacenter</div>
+          <div class="project-desc">Coordenação de migração de datacenter on-premise para nuvem híbrida. Planejamento de continuidade, comunicação com fornecedores e rollout em janelas sem impacto ao negócio.</div>
+          <div class="project-stack"><span class="tag">Cloud</span><span class="tag">BCP</span><span class="tag">PMI</span><span class="tag">Gestão de Risco</span></div>
+          <a href="#" class="project-link">Ver detalhes →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">🔐<div class="project-type"><span class="type-badge gov">Governança</span></div></div>
+        <div class="project-body">
+          <div class="project-title">Programa de Segurança da Informação</div>
+          <div class="project-desc">Estruturação do PSI do zero: política de segurança, classificação de ativos, gestão de acessos, plano de resposta a incidentes e simulações de phishing com equipes.</div>
+          <div class="project-stack"><span class="tag">Conscientização</span><span class="tag">Acesso</span></div>
+          <a href="#" class="project-link">Ver detalhes →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICAÇÕES -->
+  <div class="tab-panel" id="panel-certs-tab">
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-logo">📋</div>
+        <div class="cert-body">
+          <div class="cert-title">Project Management Professional (PMP)</div>
+          <div class="cert-issuer">Project Management Institute</div>
+          <div class="cert-date">Emitido: Fev 2023 · Validade: Fev 2026</div>
+          <div class="cert-tags"><span class="tag">Gestão</span><span class="tag">PMI</span><span class="tag">PMBOK</span></div>
+          <a href="#" class="cert-link">Ver credencial →</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">🔐</div>
+        <div class="cert-body">
+          <div class="cert-title">CompTIA Security+</div>
+          <div class="cert-issuer">CompTIA</div>
+          <div class="cert-date">Emitido: Set 2022 · Validade: Set 2025</div>
+          <div class="cert-tags"><span class="tag">Segurança</span><span class="tag">Redes</span><span class="tag">Compliance</span></div>
+          <a href="#" class="cert-link">Ver credencial →</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">🏛️</div>
+        <div class="cert-body">
+          <div class="cert-title">XXXX</div>
+          <div class="cert-issuer">Axelos / PeopleCert</div>
+          <div class="cert-date">Emitido: Nov 2021</div>
+          <div class="cert-tags"><span class="tag">Processos</span></div>
+          <a href="#" class="cert-link">Ver credencial →</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">☁️</div>
+        <div class="cert-body">
+          <div class="cert-title">AWS Cloud Practitioner</div>
+          <div class="cert-issuer">Amazon Web Services</div>
+          <div class="cert-date">Emitido: Mar 2023</div>
+          <div class="cert-tags"><span class="tag">Cloud</span><span class="tag">AWS</span><span class="tag">Fundamentos</span></div>
+          <a href="#" class="cert-link">Ver credencial →</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">📜</div>
+        <div class="cert-body">
+          <div class="cert-title">XXXX</div>
+          <div class="cert-issuer">PECB</div>
+          <div class="cert-date">Emitido: Jun 2024</div>
+          <div class="cert-tags"><span class="tag">Auditoria</span></div>
+          <a href="#" class="cert-link">Ver credencial →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="section-header reveal">
+    <div class="section-label">Contato</div>
+    <h2 class="section-title">Vamos conversar?</h2>
+    <p class="section-desc">Aberta a projetos, consultorias e oportunidades que façam sentido.</p>
+  </div>
+  <div class="contact-simple reveal">
+    <div class="contact-photo-wrap">
+      <div class="photo-ring-sm">
+        <img src="foto.png" alt="Thayna Santana" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" onerror="this.style.display='none'"/>
+      </div>
+      <div class="contact-name-block">
+        <div class="cname">Thayna Santana</div>
+        <div class="crole">Gestão de Projetos & TI Estratégica</div>
+      </div>
+    </div>
+    <p class="contact-msg">Se quiser bater um papo sobre um projeto, uma vaga ou só trocar ideia sobre tecnologia, é só mandar um e-mail.</p>
+    <button class="copy-email-btn" onclick="copyEmail()" id="copy-btn">
+      <span id="copy-icon">✉️</span>
+      <span id="copy-text">Entre em contato por E-mail</span>
+    </button>
+    <div class="contact-also">
+      <a href="https://linkedin.com" target="_blank" class="contact-link"><div class="contact-link-icon">💼</div>linkedin.com/in/seuperfil</a>
+      <a href="https://github.com" target="_blank" class="contact-link"><div class="contact-link-icon">🐙</div>github.com/seuperfil</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 — Thayna Santana. Todos os direitos reservados.</span>
+  <div class="footer-right">
+    <a href="#sobre">Sobre</a>
+    <a href="#pilares">Pilares</a>
+    <a href="#cyber">Segurança</a>
+    <a href="#trabalhos">Projetos</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
